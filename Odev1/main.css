@@ -2,7 +2,7 @@ body,head {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
-    background-image: url("back.jpg");
+    background-image: url("image/back.jpg");
     background-size: auto;
     background-position: center;
 }
@@ -80,7 +80,7 @@ p {
 
 select {
     -webkit-appearance: none;
-    background-image: url("arrow-down-grey.svg");
+    background-image: url("image/arrow-down-grey.svg");
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 15px;
