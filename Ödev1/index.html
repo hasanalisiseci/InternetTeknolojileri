@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Form ve Elemanları</title>
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <!--
+            -adı
+            -telefon
+            -mail
+            -mesaj
+            -yaşadığı şehir
+            -cinsiyet
+        -->
+        <form action="https://httpbin.org/post" method="POST">
+         <!--
+        Label ile hazır gelen for değeri label'in refere edeceği
+        id'yi gösterir
+
+        <label>Adı <input type="text"></label>
+        aşağıdaki ile aynı görevi yapar
+        -->   
+            <div>
+                <label for="adi">Adı</label>
+                <input name="adi" id="adi" type="text", value="" required>
+            </div>
+            <div>
+                <label for="tarih">Tarih</label>
+                <input name="tarih" id="tarih" type="date", value="Şişeci" >
+            </div>
+            <div>
+                <label for="tel">Telefonu</label>
+                <input name="tel" id="tel" type="tel" required>
+            </div>
+            <div>
+                <label for="mail">Mail</label>
+                <input name="mail" id="mail" type="email" required>
+            </div>
+            <div>
+                <label for="mesaj">Mesaj</label> 
+                <textarea name="mesaj" id="mesaj" cols="20" rows="5" required></textarea>
+            </div>
+            <div>
+                <label for="sehir">Şehir</label>
+                <select name="sehir" id="sehir">
+                    <option value="İstanbul" >İstanbul</option>
+                    <option value="Ankara"selected>Ankara</option>
+                    <option value="İzmir">İzmir</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Renk</p>
+                <label for="kirmizi"><input id="kirmizi" name="renk" type="radio" name="renk" value="Kırmızı" checked/> Kırmızı
+                </label>
+                <label for="mavi"><input id="mavi" name="renk" type="radio" name="renk" value="Mavi"/> Mavi
+                </label>
+                <label for="yesil"><input id="yesil" name="renk" type="radio" name="renk" value="Yeşil"/> Yeşil
+                </label>
+            </div>
+
+            <div class="buttons">
+                <button type="reset">Sıfırla</button>
+                <button type="submit">Gönder</button>
+            </div>
+
+            
+
+        </form>
+    </body>
+</html>
