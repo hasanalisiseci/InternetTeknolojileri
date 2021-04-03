@@ -59,7 +59,10 @@ p {
 }
 
 p {
-    margin-left: 60;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 400px;
 }
 
 select {
