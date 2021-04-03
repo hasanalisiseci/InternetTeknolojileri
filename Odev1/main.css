@@ -4,9 +4,14 @@ body {
 }
 
 form {
+    margin-top: 40px;
     width: 260px;
     margin-left: auto;
     margin-right: auto;
+}
+
+:focus {
+    outline: 1px;
 }
 
 .form-row {
@@ -36,6 +41,15 @@ textarea {
     background-color: #fff;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: rgb(68, 176, 255);
+    border-width: 2px;
+
+}
+
 textarea {
     height: 60px;
     padding-top: 10px;
@@ -58,8 +72,19 @@ select {
 }
 
 .radio-container label + label {
-    margin-left: 27px;
+    margin-left: 24px;
 }
+
+label[class= "adi"],
+label[class= "tarih"],
+label[class= "tel"],
+label[class= "mail"],
+label[class= "mesaj"],
+label[class= "sehir"],
+p {
+    font-weight: 600;
+}
+
 
 button {
     display: inline-block;
