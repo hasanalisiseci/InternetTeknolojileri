@@ -1,10 +1,18 @@
-body,head {
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    font-size: 16;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    text-align: center;
 }
 
 form {
+    margin-top: 40px;
+    width: 260px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -14,12 +22,12 @@ form {
 }
 
 .form-row {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .form-row label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 input[type="text"],
@@ -29,8 +37,8 @@ input[type=date],
 select,
 button,
 textarea {
-    width: 280px;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 5px;
     height: 42px;
     border: 1px solid rgba(0, 0, 0, .3);
     padding-left: 15px;
@@ -46,57 +54,11 @@ input[type="tel"]:focus,
 textarea:focus {
     border-color: rgb(68, 176, 255);
     border-width: 2px;
-}
 
-label[class= "ad"],
-label[class= "soyad"],
-label[class= "tel"],
-label[class= "mail"],
-label[class= "tarih"],
-label[class= "sehir"],
-p {
-    font-weight: 600;
-}
-
-p {
-    margin-left: 60;
-}
-
-select {
-    -webkit-appearance: none;
-    background-image: url("arrow-down-grey.svg");
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-size: 15px;
-}
-
-table {
-    
-    border-spacing: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table[class="radio-button"] {
-    border-collapse: collapse;
-    border-radius: 10px;
-    border-style: hidden; /* hide standard table (collapsed) border */
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .3); /* this draws the table border  */ 
-}
-
-td[class="radio-button"],
-th[class="radio-button"] {
-    border: 1px solid rgba(0, 0, 0, .3);
-    padding: 10px;
-    height: 50px;
-    width: 125px;
-    text-align: center;
-    font-weight: 600;
 }
 
 textarea {
-    height: 100;
-    width: 585px;
+    height: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
     min-height: 42px;
@@ -104,12 +66,39 @@ textarea {
     resize: vertical; /*Hangi yönde uzatılaibileceğine karar veriyoruz*/   
 }
 
+select {
+    -webkit-appearance: none;
+    background-image: url("arrow-down-grey.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+.radio-container label {
+    display: inline; 
+}
+
+.radio-container label + label {
+    margin-left: 24px;
+}
+
+label[class= "adi"],
+label[class= "tarih"],
+label[class= "tel"],
+label[class= "mail"],
+label[class= "mesaj"],
+label[class= "sehir"],
+p {
+    font-weight: 600;
+}
+
+
 button {
     display: inline-block;
     width: auto;
     border: none;
     background-color: #eee;
-    width: 280px;
+    width: 120px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -118,5 +107,5 @@ button {
 button[type="submit"] {
     color: white;
     background-color: rgb(68, 176, 255);
-    margin-left: 20px;
+    margin-left: 15px;
 }
