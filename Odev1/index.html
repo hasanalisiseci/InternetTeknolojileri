@@ -22,27 +22,27 @@
         <label>Adı <input type="text"></label>
         aşağıdaki ile aynı görevi yapar
         -->   
-            <div>
+            <div class="form-row">
                 <label for="adi">Adı</label>
-                <input name="adi" id="adi" type="text", value="" required>
+                <input name="adi" id="adi" type="text", placeholder="Hasan Ali Şişeci" value="" required>
             </div>
-            <div>
+            <div class="form-row"> 
                 <label for="tarih">Tarih</label>
-                <input name="tarih" id="tarih" type="date", value="Şişeci" >
+                <input name="tarih" id="tarih" type="date" >
             </div>
-            <div>
+            <div class="form-row">
                 <label for="tel">Telefonu</label>
                 <input name="tel" id="tel" type="tel" required>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="mail">Mail</label>
                 <input name="mail" id="mail" type="email" required>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="mesaj">Mesaj</label> 
                 <textarea name="mesaj" id="mesaj" cols="20" rows="5" required></textarea>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="sehir">Şehir</label>
                 <select name="sehir" id="sehir">
                     <option value="İstanbul" >İstanbul</option>
@@ -51,17 +51,19 @@
                 </select>
             </div>
 
-            <div>
+            <div class="form-row">
                 <p>Renk</p>
-                <label for="kirmizi"><input id="kirmizi" name="renk" type="radio" name="renk" value="Kırmızı" checked/> Kırmızı
-                </label>
-                <label for="mavi"><input id="mavi" name="renk" type="radio" name="renk" value="Mavi"/> Mavi
-                </label>
-                <label for="yesil"><input id="yesil" name="renk" type="radio" name="renk" value="Yeşil"/> Yeşil
-                </label>
+                <div class="radio-container">
+                    <label for="kirmizi"><input id="kirmizi" name="renk" type="radio" name="renk" value="Kırmızı" checked/> Kırmızı
+                    </label>
+                    <label for="mavi"><input id="mavi" name="renk" type="radio" name="renk" value="Mavi"/> Mavi
+                    </label>
+                    <label for="yesil"><input id="yesil" name="renk" type="radio" name="renk" value="Yeşil"/> Yeşil
+                    </label>
+                </div>
             </div>
 
-            <div class="buttons">
+            <div class="form-row">
                 <button type="reset">Sıfırla</button>
                 <button type="submit">Gönder</button>
             </div>
