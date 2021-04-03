@@ -59,7 +59,7 @@ p {
 }
 
 p {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 0;
     margin-right: 400px;
@@ -131,3 +131,29 @@ button[type="submit"] {
     background-color: rgb(68, 176, 255);
     margin-left: 20px;
 }
+
+/*Dropdown Menu CSS*/
+
+button[class="dropdown"] {
+    color: white;
+    background-color: rgb(58, 58, 57);
+    margin-left: 20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 60;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 12px;
+    z-index: 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
