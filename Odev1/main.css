@@ -29,6 +29,7 @@ input[type=date],
 select,
 button,
 textarea {
+    box-shadow: 5px 5px #413939;
     width: 280px;
     border-radius: 10px;
     height: 42px;
@@ -45,7 +46,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
     border-color: rgb(68, 176, 255);
-    border-width: 2px;
+    border-width: 3px;
 }
 
 label[class= "ad"],
@@ -74,17 +75,25 @@ select {
 }
 
 table {
-    
     border-spacing: 20px;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+div[class="table-container"]{
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #413939;
 }
 
 table[class="radio-button"] {
     border-collapse: collapse;
     border-radius: 10px;
     border-style: hidden; /* hide standard table (collapsed) border */
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .3); /* this draws the table border  */ 
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .3); /* this draws the table border  */
 }
 
 td[class="radio-button"],
@@ -95,9 +104,11 @@ th[class="radio-button"] {
     width: 50px;
     text-align: center;
     font-weight: 600;
+    border-radius: 10px;
 }
 
 td[class="radio-button-question"] {
+    border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, .3);
     padding: 10px;
     height: 50px;
@@ -131,40 +142,3 @@ button[type="submit"] {
     background-color: rgb(68, 176, 255);
     margin-left: 20px;
 }
-
-/*Dropdown Menu CSS*/
-
-button[class="dropdown"] {
-    color: white;
-    background-color: rgb(58, 58, 57);
-    margin-top: 0px;
-    margin-right: 300px;
-}
-
-button[class="dropdown-button"] {
-    background-color: rgb(58, 58, 57);
-    width: 100px;
-}
-
-a {
-    color: #fff;
-}
-
-.dropdown {
-    position: relative;
-    display: inline;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    max-width: 200;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 12px;
-    z-index: 0;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: inline;
-  }
