@@ -92,11 +92,19 @@ th[class="radio-button"] {
     border: 1px solid rgba(0, 0, 0, .3);
     padding: 10px;
     height: 50px;
-    width: 125px;
+    width: 50px;
     text-align: center;
     font-weight: 600;
 }
 
+td[class="radio-button-question"] {
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 10px;
+    height: 50px;
+    width: 350;
+    text-align: center;
+    font-weight: 600;
+}
 textarea {
     height: 100;
     width: 585px;
