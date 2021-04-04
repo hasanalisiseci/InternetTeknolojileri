@@ -18,7 +18,9 @@ body {
     color: #fff;
 }
 .navbar {
-    background-color: #28292b;
+    background-image: url("images/banner.png");
+
+    height: 50px;
     position:fixed;
     top:0;
     left:0;
@@ -26,14 +28,13 @@ body {
     margin:0;
     z-index:100;
     padding: 20px;
-    height: 50px;
 }
 
 h1[class="name"] {
     font-family: Nanum Pen Script;
     font-size: 50px;
     color: #fff;
-    text-shadow: 3px 3px #0f7a9b;
+    text-shadow: 3px 3px rgb(15, 122, 155);
 }
 
 
@@ -54,8 +55,6 @@ h1.lesson {
     margin-left: 25px;
 
 }
-
-
 
 div.info{
     height: 50px;
@@ -124,13 +123,14 @@ div.min-req-list {
 button {
     height: 50px;
     width: 300px;
-    background-color: #3d4a5a;
+    background-color: #0192ea;
     border-radius: 10px;
     margin-top: 200px;
     margin-left: 25px;
     font-size: 28px;
     font-weight: 700;
 }
+
 
 a {
     color: #fff;
