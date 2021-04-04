@@ -98,7 +98,7 @@ div[class="table-container"]{
     margin-right: auto;
     width: 580px;
     border-radius: 10px;
-    box-shadow: 5px 5px #f86b1a;
+    box-shadow: 10px 10px #f86b1a;
     color: #fff;
 }
 
@@ -118,8 +118,6 @@ th[class="radio-button"] {
     height: 50px;
     width: 50px;
     text-align: center;
-    font-weight: 600;
-    border-radius: 10px;
 }
 
 td[class="radio-button-question"] {
