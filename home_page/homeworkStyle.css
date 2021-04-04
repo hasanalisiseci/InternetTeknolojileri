@@ -5,14 +5,14 @@
 }
 
 body {
-    background-image: url("homeWorkBack2.jpg");
+    background-image: url("images/homeWorkBack3.jpg");
     background-attachment: fixed;
 }
 
 .content { 
     width: 990px;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 150px;
     color: #fff;
 }
 .navbar {
@@ -35,23 +35,29 @@ h1[class="name"] {
 }
 
 h1[class="title1"] {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     color: rgb(226, 226, 226);
+    margin-left: 45px;
+
 }
 
 h2[class="title1"] {
     margin-top: 20px;
-    text-align: center;
-    font-size: 35px;
+    text-align: left;
+    font-size: 50px;
     color: rgb(226, 226, 226);
+    margin-left: 45px;
+
 }
 
 h1.lesson {
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 70px;
+    text-align: left;
     font-size: 60px;
     color: #fff;
+    margin-left: 45px;
+
 }
 
 
@@ -99,7 +105,7 @@ div.end {
 
 div.min-req {
     height: 50px;
-    width: 350px;
+    width: 500px;
     border: 1px solid;
     border-width: 2px;
     border-color: #fff;
@@ -114,7 +120,7 @@ div.min-req-list {
     height: 50px;
     width: 500px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 25px;
     font-size: 24px;
     color: #fff;
@@ -123,13 +129,14 @@ div.min-req-list {
 button {
     height: 50px;
     width: 300px;
-    border-width: 3px;
-    border-color: #899aaf;
     background-color: #3d4a5a;
     border-radius: 10px;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 45px;
     font-size: 28px;
     font-weight: 700;
+}
+
+a {
     color: #fff;
 }
