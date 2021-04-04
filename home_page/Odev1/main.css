@@ -3,8 +3,8 @@ body,head {
     font-size: 16px;
     text-align: center;
     background-image: url("image/back.jpg");
-    background-size: auto;
-    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -155,4 +155,9 @@ button[type="submit"] {
     background-color:  rgb(238, 238, 238);
     color: rgb(42, 42, 43);
     margin-left: 20px;
+}
+
+
+div.end {
+    height: 50px;
 }

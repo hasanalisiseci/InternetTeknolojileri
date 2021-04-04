@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("images/homeWorkBack3.jpg");
+    background-image: url("images/background2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -17,7 +17,7 @@ body {
     color: #fff;
 }
 .navbar {
-    background-color: #14191e;
+    background-color: #28292b;
     position:fixed;
     top:0;
     left:0;
@@ -32,7 +32,7 @@ h1[class="name"] {
     font-family: Nanum Pen Script;
     font-size: 50px;
     color: #fff;
-    text-shadow: 3px 3px #c95959;
+    text-shadow: 3px 3px #0f7a9b;
 }
 
 h1[class="title1"] {
