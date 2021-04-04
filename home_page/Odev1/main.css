@@ -1,10 +1,8 @@
 body,head {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
     text-align: center;
     background-image: url("image/back.jpg");
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 h1{
@@ -14,18 +12,8 @@ h1{
     font-size: 50px;
 }
 
-
-form {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-:focus {
-    outline: 1px;
-}
-
 .form-row {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .form-row label {
@@ -40,42 +28,37 @@ input[type=date],
 select,
 button,
 textarea {
-    box-shadow: 5px 5px #f86b1a;
     width: 280px;
-    border-radius: 10px;
     height: 42px;
-    border: 1px solid rgba(0, 0, 0, .3);
-    padding-left: 15px;
-    padding-right: 15px;
     font-size: inherit; /* bir üst kapsayıcının değerini uygula, onu al */
     font-family: inherit;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 5px 5px #f86b1a;
+
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
+    outline: 1px;
     border-color: rgb(255, 81, 0);
     border-width: 3px;
 }
 
-label[class= "ad"],
-label[class= "soyad"],
-label[class= "tel"],
-label[class= "mail"],
-label[class= "tarih"],
-label[class= "sehir"],
-p {
+label,
+h3 {
     color: #fff;
     font-weight: 600;
 }
 
-p {
-    margin-top: 20px;
-    margin-bottom: 10px;
+h3 {
     margin-left: 0;
-    margin-right: 400px;
+    margin-right: 380px;
 }
 
 select {
@@ -86,14 +69,14 @@ select {
     background-size: 15px;
 }
 
-table {
+table.form {
     border-spacing: 20px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-div[class="table-container"]{
+div.table-container-radio-button,
+div.table-container-or {
     margin-left: auto;
     margin-right: auto;
     width: 580px;
@@ -102,7 +85,9 @@ div[class="table-container"]{
     color: #fff;
 }
 
-table[class="radio-button"] {
+table.radio-button,
+table.or {
+    margin-bottom: 40px;
     background: white;
     border-collapse: collapse;
     border-radius: 10px;
@@ -110,8 +95,10 @@ table[class="radio-button"] {
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3); /* this draws the table border  */
 }
 
-td[class="radio-button"],
-th[class="radio-button"] {
+td.radio-button,
+th.radio-button,
+td.or,
+th.or {
     color: rgb(68, 65, 65);
     border: 1px solid rgba(248, 107, 26, 1);
     padding: 10px;
@@ -120,24 +107,31 @@ th[class="radio-button"] {
     text-align: center;
 }
 
-td[class="radio-button-question"] {
+td.or,
+th.or {
+    width: 150;
+}
+
+td.radio-button-question,
+td.or-question{
     color: #332f2f;
     border-radius: 10px;
     border: 1px solid rgba(248, 107, 26, 1);
     padding: 10px;
     height: 50px;
-    width: 350;
+    width: 450;
     text-align: center;
     font-weight: 600;
 }
 textarea {
     height: 42;
-    width: 585px;
+    width: 580px;
     padding-top: 10px;
     padding-bottom: 10px;
     min-height: 42px;
     max-height: 200px;
-    resize: vertical; /*Hangi yönde uzatılaibileceğine karar veriyoruz*/   
+    resize: vertical; /*Hangi yönde uzatılaibileceğine karar veriyoruz*/
+    margin-bottom: 30px;
 }
 
 button {
@@ -146,17 +140,9 @@ button {
     border: none;
     background-color: #eee;
     width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-button[type="submit"] {
-    background-color:  rgb(238, 238, 238);
-    color: rgb(42, 42, 43);
-    margin-left: 20px;
-}
-
 
 div.end {
     height: 50px;
