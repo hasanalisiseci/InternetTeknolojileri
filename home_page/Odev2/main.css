@@ -6,45 +6,55 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: rgba(99, 16, 23, 0.867);
-}
-
-.page {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    background-color: white;
 }
 
 .header {
-    padding: 20px;
-    text-align: center;
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
 }
 
+/* Menu Kutusu */
 .menu {
-    background-color: blueviolet;
-    text-align: center;
-    padding: 20px 0px 20px 0px;
+    overflow: hidden; /* li öğelerine uygulanan float:left ile akışı bozulan div bloğu tekrar akışa çekiliyor. */
+    background-color: #4894b4;
+    height: 50px;
+}
+.menu ul{
+    margin: 0px;  
+    padding: 0px;
+}
+.menu li{
+    list-style-type: none;  /* li öğesinin standart stil görünümü kaldırılıyor.*/
+    float: right; /* tüm li öğeleri sağa hizalanarak yan yana getiriliyor.*/
+    width: 200px;
+    border-left: 2px solid;
+    border-image: 
+      linear-gradient(
+        to top, 
+        rgb(0, 247, 255), 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
 }
 
-li {
-    display: inline;
-    margin: 20px;
+/* Menü Linkleri */
+.menu a {
+    font-size: 18px;            
+    display: block; /* Satır içi olan a öğesi blok tipi gibi davranması isteniyor. */
+    color: #f2f2f2;
+    text-align: center; 
+    padding: 14px 16px; /* a öğesi blok durumunda ancak padding uygulanabiliyor.*/
+    text-decoration: none; /* a öğesinin standart stil görünümü (alt öizgisi) kaldırılıyor. */
 }
 
-a {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
+/* Mouse üzerinde iken link değişimi */
+.menu a:hover {
+    font-size: 20px;
+    color: #00f7ff;
 }
-
-a:hover {
-    color: black;
-    font-size: 30px;
-    text-decoration: overline underline dashed red;
-}
-
+/*------------------------------------------------------------*/
 .content::after {
     content: "";
     display: table;
@@ -61,36 +71,140 @@ a:hover {
 .left,
 .right {
     width: 25%;
-    background-color: tomato;
+    background-color: white;
 }
 
 .middle {
     width: 50%;
 }
+/*------------------------------------------------------------*/
+.film-item-container {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+.film-1 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/toy-story-1.jpg);   
+}
+.film-2 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/toy-story-2.jpg);    
+}
+.film-3 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/toy-story-3.jpg);    
+}
+.film-4 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/toy-story-4.jpg);    
+}
+
+.film-1:hover {
+    background-image: url(images/toy-story-1.jpg);    
+}
+.film-2:hover {
+    background-image: url(images/toy-story-2.jpg);    
+}
+.film-3:hover {
+    background-image: url(images/toy-story-3.jpg);    
+}
+.film-4:hover {
+    background-image: url(images/toy-story-4.jpg);    
+}
+
+.film-text {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+  
+.film-text h1 {
+color: white;
+font-size: 30px;
+font-weight: 800;
+text-shadow: 2px 2px black;
+}
+
+.film-text p {
+    color: white;
+    padding: 20px;
+    text-shadow: 2px 2px black;
+}
+
+/*------------------------------------------------------------*/
+
+.char-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.char-item-container {
+    width: 200px;
+    height: 300px;
+    margin-left: 20px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.char-1 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/woody-1.jpg);   
+}
+.char-2 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/buzz-1.jpg);    
+}
+.char-3 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/potato-1.jpg);    
+}
+.char-4 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/slinky-1.jpg);    
+}
+.char-5 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/rex-1.jpg);    
+}
+.char-6 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/jessie-1.jpg);    
+}
+
+.char-1:hover {
+    background-image: url(images/woody-2.jpg);
+}
+.char-2:hover {
+    background-image: url(images/buzz-2.jpg);    
+}
+.char-3:hover {
+    background-image: url(images/potato-2.jpg);    
+}
+.char-4:hover {
+    background-image: url(images/slinky-2.jpg);    
+}
+.char-5:hover {
+    background-image: url(images/rex-2.jpg);    
+}
+.char-6:hover {
+    background-image: url(images/jessie-2.jpg);    
+}
+
+.char-text {
+    margin-top: 150px;
+    padding-top: 20px;
+}
+  
+.char-text h1 {
+color: white;
+font-size: 30px;
+font-weight: 800;
+text-shadow: 2px 2px black;
+}
+
+/*------------------------------------------------------------*/
 
 .footer {
     background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    width: 100%;
+    height: 100px;
 }
-
-div h2, p{
-    text-align: center;
-}
-
-.grid-container {
-    display: grid;
-    row-gap: 10px; /*gap or column gap*/
-    grid-template-columns: auto;
-    padding: 10px;
-}
-
-.grid-item {
-    border: 1px solid rgba(255, 255, 255, 1);
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
 
