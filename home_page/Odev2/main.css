@@ -62,7 +62,7 @@ body{
 }
 
 .column {
-    height: 1000px;
+    height: auto;
     float: left;
     background-color: white;
     padding: 20px;
@@ -76,7 +76,6 @@ body{
 
 .middle {
     width: 50%;
-    height: auto;
 }
 /*------------------------------------------------------------*/
 .film-item-container {
@@ -138,6 +137,7 @@ text-shadow: 2px 2px black;
 
 .film-subject {
     margin-top: 20px;
+    margin-bottom: 25px;
     border: 5px solid #4894b4;
     padding: 20px;
     border-radius: 30px;
