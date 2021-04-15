@@ -9,6 +9,8 @@ body{
     user-select: none;
 }
 
+/*------------------------------------------------------------*/
+
 .header {
     width: 100%;
     height: 15vh;
@@ -17,9 +19,10 @@ body{
     background-size: cover;
 }
 
-/* Menu Kutusu */
+/*------------------------------------------------------------*/
+
 .menu {
-    overflow: hidden; /* li öğelerine uygulanan float:left ile akışı bozulan div bloğu tekrar akışa çekiliyor. */
+    overflow: hidden; 
     background-color: #4895b4;
     height: 50px;
 }
@@ -28,8 +31,8 @@ body{
     padding: 0px;
 }
 .menu li{
-    list-style-type: none;  /* li öğesinin standart stil görünümü kaldırılıyor.*/
-    float: right; /* tüm li öğeleri sağa hizalanarak yan yana getiriliyor.*/
+    list-style-type: none; 
+    float: right; 
     width: 200px;
     border-left: 2px solid;
     border-image: 
@@ -40,7 +43,7 @@ body{
       ) 1 100%;
 }
 
-/* Menü Linkleri */
+/*------------------------------------------------------------*/
 .menu a {
     font-size: 18px;            
     display: block; /* Satır içi olan a öğesi blok tipi gibi davranması isteniyor. */
