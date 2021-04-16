@@ -1,4 +1,5 @@
-$shadowColor: 0 0 2px rgba(0, 0, 0, 0.05), 
+$shadowColor:
+0 0 2px rgba(0, 0, 0, 0.05), 
 0 0 2px rgba(0, 0, 0, 0.05),
 0 0 3px rgba(0, 0, 0, 0.05),
 0 0 4px rgba(0, 0, 0, 0.05), 
@@ -13,7 +14,7 @@ $loginButtonTextColor: #ffffff;
 $blackTextColor: #000000;
 $blackTextColor2: #000000de;
 $searchInputColor: #dddddd;
-$positionValue: absolute;
+$footerBackgroundColor: #f2f2f2;
 
 *{
 	padding: 0;
@@ -21,19 +22,19 @@ $positionValue: absolute;
 	box-sizing: border-box;
 	text-decoration: none;
 	font-family: arial, sans-serif;
-	user-select: none;
 }
 
 body {
-	display: flex;
+	display: flex; 
 	flex-direction: column;
 	min-height: 100vh;
 }
+
 nav {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	margin-right: 30px;
+	margin-right: 20px;
 	margin-top: 14px;
 }
 
@@ -43,34 +44,34 @@ nav a {
 	line-height: 24px;
 	font-weight: 400;
 	color: $blackTextColor;
-	cursor: pointer;
-	padding: 5px 6.7px
+	cursor: pointer; 
+	padding: 6px;
 }
 
 nav a:hover {
 	text-decoration: underline;
-	opacity: .85;
 }
+
 nav img {
 	width: 34px;
-	padding: 5px;
+	padding: 6px;
 	margin: auto 7px;
 	cursor: pointer;
 }
+
 nav img:hover {
     background-color: $googleAppsIconHoverColor;
     border: 1px;
     border-radius: 50px;
 }
+
 nav button {
 	height: 36px;
 	width: 140px;
 	border: none;
 	font-weight: bold;
-	outline: none;
 	background: $loginButtonColor;
 	color: $loginButtonTextColor;
-	padding: 7px 12px;
 	border-radius: 5px;
 	margin-left: 7px;
 	cursor: pointer;
@@ -81,16 +82,17 @@ nav button:hover {
 	background: $loginButtonHoverColor;
 }
 
-.section-1 {
+.middle-container {
 	flex: 1;
 	margin-top: 40px;
 }
 
-.section-1 .logo {
+.middle-container .logo {
 	display: block;
 	margin: 0px auto;
 	margin-top: 107px;
 }
+
 .button-container {
 	width: 585px;
 	margin: 0px auto;
@@ -108,30 +110,30 @@ nav button:hover {
 	padding-right: 85px;
 	border-radius: 25px;
 	width: 100%;
-	transition: box-shadow 100ms;
 	outline: none;
 }
 .button-container  .search-input:hover {
 	border: 1px solid $searchInputColor;
 	box-shadow: $shadowColor;
 }
+
 .button-container .search-icon {
 	width: 20px;
 	opacity: .4;
-	position: $positionValue;
+	position: absolute;
 	top: 13px;
 	left: 14px;
 }
 .button-container .mic-icon {
 	width: 14px;
-	position: $positionValue;
+	position: absolute;
 	top: 13px;
 	right: 24px;
 }
 
 .button-container .keyboard-icon {
 	width: 20px;
-	position: $positionValue;
+	position: absolute;
 	top: 13px;
 	right: 60px;
 }
@@ -151,24 +153,13 @@ nav button:hover {
 	transition: border-color 100ms;
 }
 .sub-button:hover {
-	border: 1px solid #aaa;
+	box-shadow: $shadowColor;
 }
-.lang {
-	margin-top: 30px;
-	text-align: center;
-	font-size: 13px;
-	color: #111;
-}
-.lang a {
-	margin-left: 5px;
-	color: #1a0dab;
-}
-.lang a:hover {
-	text-decoration: underline;
-}
+
 footer {
-	background: #f2f2f2;
+	background: $footerBackgroundColor;
 }
+
 footer h4 {
 	color: rgba(0,0,0, 0.54);
 	font-size: 16px;
@@ -190,6 +181,7 @@ footer a:hover {
 	border-top: 1px solid #ddd;
 	display: flex;
 }
+
 .link-1 {
 	padding-left: 18.7px;
 	flex: 1;
