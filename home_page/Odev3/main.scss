@@ -1,11 +1,9 @@
 $shadowColor:
-0 0 2px rgba(0, 0, 0, 0.05), 
 0 0 2px rgba(0, 0, 0, 0.05),
 0 0 3px rgba(0, 0, 0, 0.05),
 0 0 4px rgba(0, 0, 0, 0.05), 
-0 0 5px rgba(0, 0, 0, 0.05), 
-0 0 4px rgba(0, 0, 0, 0.05), 
-0 0 5px rgba(0, 0, 0, 0.05);
+0 0 5px rgba(0, 0, 0, 0.05),
+0 0 6px rgba(0, 0, 0, 0.05);
 
 $googleAppsIconHoverColor: #e4e4e4;
 $loginButtonColor: #2576fa;
@@ -16,7 +14,7 @@ $blackTextColor2: #000000de;
 $searchInputColor: #dddddd;
 $footerBackgroundColor: #f2f2f2;
 
-*{
+* {
 	padding: 0;
 	margin:0;
 	box-sizing: border-box;
@@ -69,13 +67,13 @@ nav button {
 	height: 36px;
 	width: 140px;
 	border: none;
-	font-weight: bold;
+	font-size: 15px;
+	font-weight: 300;
 	background: $loginButtonColor;
 	color: $loginButtonTextColor;
 	border-radius: 5px;
 	margin-left: 7px;
 	cursor: pointer;
-	font-weight: 700;
 }
 
 nav button:hover {
@@ -91,6 +89,7 @@ nav button:hover {
 	display: block;
 	margin: 0px auto;
 	margin-top: 107px;
+	margin-bottom: 20px;
 }
 
 .button-container {
@@ -100,6 +99,7 @@ nav button:hover {
 	margin-top: -8px;
 	text-align: center;
 }
+
 .button-container .search-input {
 	display: block;
 	border: 1px solid $searchInputColor;
@@ -113,7 +113,6 @@ nav button:hover {
 	outline: none;
 }
 .button-container  .search-input:hover {
-	border: 1px solid $searchInputColor;
 	box-shadow: $shadowColor;
 }
 
@@ -124,6 +123,7 @@ nav button:hover {
 	top: 13px;
 	left: 14px;
 }
+
 .button-container .mic-icon {
 	width: 14px;
 	position: absolute;
@@ -141,7 +141,7 @@ nav button:hover {
 .sub-button {
 	border: 1px solid transparent;
 	padding: 9px 15px;
-	background-color: #f1f1f17c ;
+	background-color: #f1f1f17c;
 	color: $blackTextColor2;
 	font-size: 14px;
 	border-radius: 4px;
@@ -152,6 +152,7 @@ nav button:hover {
 	cursor: pointer;
 	transition: border-color 100ms;
 }
+
 .sub-button:hover {
 	box-shadow: $shadowColor;
 }
@@ -168,15 +169,18 @@ footer h4 {
 	padding-left: 29px;
 	border: 1px solid #eee;
 }
+
 footer a {
 	color: #5f6368;
 	display: inline-block;
 	padding: 12px 11.3px;
 	font-size: 14px;
 }
+
 footer a:hover {
 	text-decoration: underline;
 }
+
 .links {
 	border-top: 1px solid #ddd;
 	display: flex;
