@@ -48,9 +48,12 @@ function newElement() {
 
 //Delete all ul items when clicking on the trash icon button
 function deleteAll() {
+  var inputValue = document.getElementById("myInput").value;
   if(myNodelist.length === 0) {
+    document.getElementById("myInput").value = "";
     alert("Liste zaten boş!");
   } else {
+    document.getElementById("myInput").value = "";
     var myList = document.getElementById('myUL');
     myList.innerHTML = '';
   }
