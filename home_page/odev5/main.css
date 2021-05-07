@@ -1,7 +1,10 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-image: url("https://images.unsplash.com/photo-1506617420156-8e4536971650?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80");
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url("https://images.unsplash.com/photo-1506617420156-8e4536971650?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 * {
@@ -36,7 +39,6 @@ ul li {
   font-weight: 600;
   transition: 0.2s;
   margin-top: 10px;
-  border-radius: 15px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -50,7 +52,7 @@ ul li:hover {
 }
 
 /* Style the close button */
-.close {
+.deleteElement {
   width: 55px;
   height: 50px;
   background-image: url("https://www.flaticon.com/svg/vstatic/svg/2371/2371833.svg?token=exp=1620385199~hmac=cf614d79404dba5aa6f8f6ea5d0a6646");
@@ -65,13 +67,12 @@ ul li:hover {
   padding: 12px 16px 12px 16px;
 }
 
-.close:hover {
+.deleteElement:hover {
   background-color: #ff5656;
 }
 
 /* Style the header */
 .header {
-  border-radius: 15px;
   background-color: #ffffff;
   padding: 30px 40px;
   color: black;
@@ -93,7 +94,7 @@ ul li:hover {
 /* Style the input */
 input {
   outline: none;
-  margin: 0px auto;
+  margin: 0 auto;
   border: none;
   border-radius: 10px;
   width: 300px;

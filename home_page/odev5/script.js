@@ -1,19 +1,19 @@
-// Create a "close" button and append it to each list item
+// Create a "deleteElement" button and append it to each list item
 var myNodelist = document.getElementsByTagName("Li");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("");
-  span.className = "close";
+  span.className = "deleteElement";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
+// Click on a deleteElement button to hide the current list item
+var deleteListElement = document.getElementsByClassName("deleteElement");
 var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function () {
+for (i = 0; i < deleteListElement.length; i++) {
+  deleteListElement[i].onclick = function () {
     var div = this.parentElement;
     div.style.display = "none";
   };
@@ -34,12 +34,12 @@ function newElement() {
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("");
-  span.className = "close";
+  span.className = "deleteElement";
   span.appendChild(txt);
   li.appendChild(span);
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
+  for (i = 0; i < deleteListElement.length; i++) {
+    deleteListElement[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = "none";
     };
