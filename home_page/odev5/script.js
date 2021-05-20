@@ -1,12 +1,12 @@
 // Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("Li");
+var shopList = document.getElementsByTagName("Li");
 var i;
-for (i = 0; i < myNodelist.length; i++) {
+for (i = 0; i < shopList.length; i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("");
   span.className = "close";
   span.appendChild(txt);
-  myNodelist[i].appendChild(span);
+  shopList[i].appendChild(span);
 }
 
 // Click on a close button to hide the current list item
@@ -15,7 +15,8 @@ var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function () {
     var div = this.parentElement;
-    div.style.display = "none";
+    shopList[i].remove;
+    div.style.display = "none"; 
   };
 }
 
@@ -47,10 +48,11 @@ function newElement() {
 }
 
 function deleteAll() {
-  if(myNodelist.length === 0) {
+  if(shopList.length === 0) {
     alert("Liste zaten boş!");
   } else {
     var myList = document.getElementById('myUL');
     myList.innerHTML = '';
   }
 }
+
